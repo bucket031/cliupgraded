@@ -1,0 +1,23 @@
+# Absolute Void Clock config.
+# Edit in-game with /voidclock config (menus), or edit here and run /voidclock reload.
+
+# Ability 1: hit a player with the clock to freeze them in place (even mid-air).
+freeze_strike:
+  freeze_seconds: 3.0       # 0.5 - 10
+  cooldown_seconds: 20      # 0 - 300
+
+# Ability 2: right-click. Slows everything around you and boosts your attack speed.
+time_slow:
+  duration_seconds: 20      # 1 - 120
+  cooldown_seconds: 120     # 0 - 3600
+  tick_rate: 5              # 1 - 20 (20 = normal speed, 5 = quarter speed)
+  attack_speed_percent: 100 # 0 - 300 (100 = double attack speed)
+  radius: 10                # 1 - 32 blocks
+  resistance_level: 1       # 0 - 5 (0 = none), given to you while active
+
+# Ability 3: right-click. Fires a beam where you look.
+void_beam:
+  damage_hearts: 3.0        # 0.5 - 20
+  range: 40                 # 5 - 100 blocks
+  cooldown_seconds: 10      # 0 - 300
+  ignore_armor: true
